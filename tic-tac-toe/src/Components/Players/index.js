@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 
-function Players({ player1, player2 }) {
+function Players() {
   return (
     <div className="players">
-      <h2 className="icon">
-        <i class="fa-solid fa-user"></i>
-      </h2>
-      <h2 className="icon">
-        <i class="fa-solid fa-user"></i>
-      </h2>
+      <h2 className="icon"></h2>
+      <h2 className="icon"></h2>
     </div>
   );
 }

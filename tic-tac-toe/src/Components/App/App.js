@@ -9,6 +9,7 @@ function App() {
   //   const [player1, setPlayer1] = useState("");
 
   //   const [player2, setPlayer2] = useState("Craig");
+  const [gameComplete, setGameComplete] = useState(false);
 
   const [board, setBoard] = useState([
     { player: "" },
@@ -27,9 +28,9 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Board board={board} setBoard={setBoard} />
+      <Board gameComplete={gameComplete} board={board} setBoard={setBoard} />
       <Players />
-      <Checker board={board} />
+      <Checker setGameComplete={setGameComplete} board={board} />
     </div>
   );
 }
