@@ -36,7 +36,7 @@ export default function Checker({ board, setGameComplete }) {
   }
 
   const winner = checkWinner(board);
-  // mstop game
+  // stop game
   if (winner) {
     setGameComplete(true);
   }

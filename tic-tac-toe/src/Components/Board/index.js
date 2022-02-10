@@ -3,7 +3,7 @@ import "./style.css";
 
 function Board({ board, setBoard, gameComplete }) {
   const [toggle, setToggle] = useState(true);
-  const [playerTurn, setPlayerTurn] = useState("O");
+  const [playerTurn, setPlayerTurn] = useState("");
 
   function toggleBoard(index) {
     //   stop changing singns when game completed

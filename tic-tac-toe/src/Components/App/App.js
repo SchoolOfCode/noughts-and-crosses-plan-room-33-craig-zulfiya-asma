@@ -5,6 +5,8 @@ import Players from "../Players";
 import { useState } from "react";
 import Checker from "../Checker";
 
+// I would add scores and reset game button as well
+
 function App() {
   //   const [player1, setPlayer1] = useState("");
 
