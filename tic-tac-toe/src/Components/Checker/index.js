@@ -2,11 +2,10 @@ import { useState } from "react";
 import "./style.css";
 
 export default function Checker({ board, setGameComplete }) {
-  //   const [winner, setWinner] = useState(true);
+  const [score, setScore] = useState();
 
   const [player1, setPlayer1] = useState("");
   const [player2, setPlayer2] = useState("");
-
   function checkWinner(squares) {
     const lines = [
       [0, 1, 2],
@@ -35,6 +34,11 @@ export default function Checker({ board, setGameComplete }) {
     return null;
   }
 
+  // score
+  function updateScore() {
+    setScore(score + 1);
+  }
+
   const winner = checkWinner(board);
   // stop game
   if (winner) {
@@ -44,10 +48,11 @@ export default function Checker({ board, setGameComplete }) {
   let winningPlayer = "";
   if (winner === "X") {
     // set winner to player1
+    // updateScore();
     winningPlayer = player1;
   } else if (winner === "O") {
     // set winner to player2
-
+    // updateScore();
     winningPlayer = player2;
   }
 
@@ -62,6 +67,7 @@ export default function Checker({ board, setGameComplete }) {
             setPlayer1(e.target.value);
           }}
         ></input>
+        <span> {score}</span>
       </div>
       <div className="user2">
         <i className="fa-solid fa-user player"></i>
@@ -72,6 +78,7 @@ export default function Checker({ board, setGameComplete }) {
             setPlayer2(e.target.value);
           }}
         ></input>
+        <span> {score}</span>
       </div>
 
       <h2>Winner is {winningPlayer}</h2>
