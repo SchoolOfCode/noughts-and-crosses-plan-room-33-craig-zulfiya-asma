@@ -1,26 +1,31 @@
 .user1 input {
   margin: 1rem;
   border: none;
-  background-color: #f4f4f4;
+  border-bottom: 1px solid black;
+  padding: 5px 10px;
   outline: none;
   height: 25px;
   width: 215px;
 }
 
 .user1 i {
-  color: #290fba;
+  color: black;
 }
 
 .user2 input {
-  margin: 1rem;
-  border: none;
-  background-color: #f4f4f4;
   outline: none;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+  margin: 1rem;
+  padding: 5px 10px;
   height: 25px;
   width: 215px;
-  border-radius: 2px;
 }
 
 .user2 i {
-  color: #290fba;
+  color: black;
 }

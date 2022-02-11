@@ -35,7 +35,7 @@ function Board({ board, setBoard, gameComplete }) {
     <div className="board">
       {board.map(function (item, index) {
         return (
-          <div className="top-left" onClick={() => toggleBoard(index)}>
+          <div className="square" onClick={() => toggleBoard(index)}>
             <div>{item.player}</div>
           </div>
         );
